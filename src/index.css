@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* hsl(0 0% 100%) */
+    --foreground: 0 0% 3.9%; /* hsl(0 0% 3.9%) */
+    --card: 0 0% 100%; /* hsl(0 0% 100%) */
+    --card-foreground: 0 0% 3.9%; /* hsl(0 0% 3.9%) */
+    --popover: 0 0% 100%; /* hsl(0 0% 100%) */
+    --popover-foreground: 0 0% 3.9%; /* hsl(0 0% 3.9%) */
+    --primary: 181 100% 34.9%; /* hsl(181 100% 34.9%) */
+    --primary-foreground: 0 0% 95%; /* hsl(0 0% 95%) */
+    --secondary: 227 25% 22%; /* hsl(227 25% 22%) */
+    --secondary-foreground: 60 4.8% 95.9%; /* hsl(60 4.8% 95.9%) */
+    --muted: 206 7% 54%; /* hsl(206 7% 54%) */
+    --muted-foreground: 24 9.8% 10%; /* hsl(24 9.8% 10%) */
+    --accent: 0 0% 96.1%; /* hsl(0 0% 96.1%) */
+    --accent-foreground: 0 0% 45.1%; /* hsl(0 0% 45.1%) */
+    --destructive: 0 84.2% 60.2%; /* hsl(0 84.2% 60.2%) */
+    --destructive-foreground: 0 0% 98%; /* hsl(0 0% 98%) */
+    --border: 240 5.9% 90%; /* hsl(240 5.9% 90%) */
+    --input: 240 5.9% 90%; /* hsl(240 5.9% 90%) */
+    --ring: 181 100% 34.9%; /* hsl(181 100% 34.9%) */
+    --radius: 0.5rem;
+    --chart-1: 341 79% 76%; /* hsl(341 79% 76%) */
+    --chart-2: 212 74% 54%; /* hsl(212 74% 54%) */
+    --chart-3: 169 68% 57%; /* hsl(169 68% 57%) */
+    --chart-4: 45 100% 64%; /* hsl(45 100% 64%) */
+    --chart-5: 228 50% 56%; /* hsl(228 50% 56%) */
+    --chart-6: 155 54% 46%; /* hsl(155 54% 46%) */
+    --chart-7: 0 75% 58%; /* hsl(0 75% 58%) */
+    --chart-8: 120 60% 50%; /* hsl(120 60% 50%) */
+    --chart-9: 290 70% 60%; /* hsl(290 70% 60%) */
+    --chart-10: 34 80% 52%; /* hsl(34 80% 52%) */
+    --chart-11: 198 65% 55%; /* hsl(198 65% 55%) */
+    --chart-12: 48 85% 62%; /* hsl(48 85% 62%) */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+@layer components {
+  .container-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    @apply px-4 xl:px-6;
+  }
+
+  @media (min-width: 1800px) {
+    .container-wrapper {
+      max-width: 1536px;
+    }
+  }
+}
