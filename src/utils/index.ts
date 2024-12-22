@@ -6,3 +6,4 @@ export * from './class-names';
 export * from './chart';
 export * from './document';
 export * from './date-time';
+export * from './feature-flags';
